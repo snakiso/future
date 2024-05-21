@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.23 51.23">
+  <g id="_лой_1" data-name="Слой 1"/>
+  <g id="_лой_2" data-name="Слой 2">
+    <g id="_лой_1-2" data-name="Слой 1">
+      <g>
+        <polyline points="1.42 18.79 1.42 1.42 18.79 1.42" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.83px;"/>
+        <polyline points="32.44 1.42 49.81 1.42 49.81 18.79" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.83px;"/>
+        <polyline points="18.79 49.81 1.42 49.81 1.42 32.44" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.83px;"/>
+        <polyline points="49.81 32.44 49.81 49.81 32.44 49.81" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.83px;"/>
+      </g>
+    </g>
+  </g>
+</svg>

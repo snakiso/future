@@ -1,0 +1,47 @@
+.switcher {
+  position: relative;
+  display: flex;
+  background-color: rgb(255,255,255, 0.85);
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-weight: 400;
+  height: 65px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-top: 30px;
+
+  &__item {
+    font-size: 28px;
+    position: relative;
+    z-index: 2;
+    color:  #2A333B;
+    cursor: pointer;
+
+    &.active {
+      color: white;
+    }
+  }
+
+  &__swipe {
+    position: absolute;
+    background-color: #2A333B;
+    z-index: 1;
+    height: 100%;
+
+    width: 100px;
+    border-radius: 4px;
+
+    &_professional {
+      left: 100%;
+      transform: translate(-100%, 0);
+      transition: all .2s;
+    }
+
+    &_personal {
+      left: 0;
+      transform: translate(0%, 0);
+      transition: all .2s;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url(./assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    font-family: 'PPNeueMachinaPlain';
+    max-width: 1080px;
+    width: 100%;
+}
+
+button {
+    all: unset;
+}
+
+@font-face {
+    font-family: 'PPNeueMachinaPlain';
+    src: url('./fonts/NeueMachina-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PPNeueMachinaPlain';
+    src: url('./fonts/NeueMachina-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+}

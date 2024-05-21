@@ -1,0 +1,25 @@
+.title-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 920px;
+  margin-top: 60px;
+  z-index: 2;
+
+  &__own {
+    font-size: 106px;
+    line-height: 122%;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__sub {
+    display: block;
+    margin: -4px 0 0 0;
+    font-size: 56px;
+    letter-spacing: 0.6px;
+  }
+}
+
