@@ -17,6 +17,7 @@ export const Form = () => {
     const [getFuture, params] = useLazyGetMessageQuery()
     const [completed, setCompleted] = useState(false)
 
+
     useEffect(() => {
         if (params.status === "fulfilled") {
             setCompleted(true)
@@ -66,11 +67,14 @@ export const Form = () => {
                 <form className={formClassName} onSubmit={submitHandler}>
                     <h3 className={'form__subtitle'}>Введите дату рождения</h3>
                     <div className={'form__select-box'}>
-                        <Select data={daysForRender} placeholder={'День'} value={day}
+                        <Select data={daysForRender} placeholder={'День'}
+                                value={day}
                                 onValueChange={setDay}/>
-                        <Select data={Object.values(months)} placeholder={'Месяц'} value={month}
+                        <Select data={Object.values(months)}
+                                placeholder={'Месяц'} value={month}
                                 onValueChange={setMonth}/>
-                        <Select data={yearForRender} placeholder={'Год'} value={year} onValueChange={setYear}/>
+                        <Select data={yearForRender} placeholder={'Год'}
+                                value={year} onValueChange={setYear}/>
                     </div>
                     <h3 className={'form__subtitle'}>Выберите сферу</h3>
                     <Switcher position={position} setPosition={setPosition}/>

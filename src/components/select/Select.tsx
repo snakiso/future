@@ -11,6 +11,7 @@ type SelectProps = {
     placeholder: string
 } & ComponentPropsWithoutRef<typeof SelectRadix.Root>
 
+
 export const Select = ({
                            defaultValue,
                            onValueChange,
@@ -18,8 +19,12 @@ export const Select = ({
                            data,
                            placeholder
                        }: SelectProps) => {
+
+
+
     return (
         <SelectRadix.Root
+
             defaultValue={defaultValue}
             onValueChange={onValueChange}
             value={value}
@@ -32,13 +37,17 @@ export const Select = ({
                     <img src={arrowIcon} alt=""/>
                 </SelectRadix.Icon>
             </SelectRadix.Trigger>
-            <SelectRadix.Portal >
-                <SelectRadix.Content className={'select__content'} position={"popper"}>
+            <SelectRadix.Portal>
+                <SelectRadix.Content ref={(ref) => ref?.addEventListener('touchend', (e) => e.preventDefault())}
+                                     className={'select__content'} position={"popper"} asChild>
                     <SelectRadix.Viewport asChild>
                         <SelectRadix.Group>
                             {data.map((el, i) => {
                                 return (
-                                    <SelectRadix.Item className={'select__item'} key={i} value={el}>
+                                    <SelectRadix.Item  onPointerUp={(event) => {
+                                        console.log('onPointerUp');
+                                        event.stopPropagation();
+                                    }} className={'select__item'} key={i} value={el}>
                                         <SelectRadix.ItemText>
                                             {el}
                                         </SelectRadix.ItemText>

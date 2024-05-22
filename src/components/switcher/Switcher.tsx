@@ -5,11 +5,10 @@ import {Dispatch, SetStateAction, useRef} from "react";
 type SwitcherProps = {
     position: string
     setPosition: Dispatch<SetStateAction<string>>
+
 }
 
 export const Switcher = ({position, setPosition}: SwitcherProps) => {
-
-
 
 
     const privateButton = useRef<HTMLSpanElement>(null);
@@ -31,8 +30,12 @@ export const Switcher = ({position, setPosition}: SwitcherProps) => {
     }
 
     const currentWidth = checkWidth()
-    const personalClick = () => setPosition('personal')
-    const professionalClick = () => setPosition('professional')
+    const personalClick = () => {
+        setPosition('personal')
+    }
+    const professionalClick = () => {
+        setPosition('professional')
+    }
 
 
     return (
